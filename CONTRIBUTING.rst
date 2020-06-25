@@ -1,5 +1,7 @@
-Developer overview
-==================
+.. _howto_contribute:
+
+Contributor Guide
+=================
 
 1. If you are a first-time contributor:
 
