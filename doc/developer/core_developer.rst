@@ -98,7 +98,7 @@ the original. In doing so, ensure you communicate that you are not
 throwing the contributor's work away!
 
 Please add a note to a pull request after you push new changes; GitHub
-does not send out notifications for these.
+may not send out notifications for these.
 
 Merge Only Changes You Understand
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
