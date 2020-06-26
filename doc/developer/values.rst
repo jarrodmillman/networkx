@@ -7,7 +7,7 @@ Mission and Values
 Our mission
 -----------
 
-NetworkX aims to be the reference library for scientific image analysis in
+NetworkX aims to be the reference library for network science algorithms in
 Python. We accomplish this by:
 
 - being **easy to use and install**. We are careful in taking on new
@@ -20,7 +20,7 @@ Python. We accomplish this by:
   at least two core developers before being included in the library.
 - **caring for users’ data**. We have a functional API and don't modify
   input arrays unless explicitly directed to do so.
-- promoting **education in image processing**, with extensive pedagogical
+- promoting **education in network science**, with extensive pedagogical
   documentation.
 
 .. _values:
@@ -33,7 +33,16 @@ Our values
 - We are community-driven. Decisions about the API and features are driven by
   our users' requirements, not by the whims of the core team. (See
   :ref:`governance`.)
-- We serve scientific applications primarily ...
+- We serve scientific applications primarily, both social and natural sciences. 
+- We focus on network science algorithms and graph measures primarily.
+- We prefer simple readable code that uses native Python data structures
+  (especially dicts) due to their consistent intuitive interface and amazing
+  performance capabilities. We include interfaces to other data structures,
+  especially NumPy arrays and SciPy sparse matrixes for algorithms that more
+  naturally use arrays and matrixes or where time or space requirements are 
+  significantly lower. Sometimes we provide two algorithms for the same result,
+  one using each data structure, when pedagogy or space/time trade-offs justify
+  such multiplicity.
 - We value simple, readable implementations over getting every last ounce of
   performance. Readable code that is easy to understand, for newcomers and
   maintainers alike, makes it easier to contribute new code as well as prevent
