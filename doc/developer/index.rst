@@ -11,5 +11,6 @@ Developer Guide
    core_developer
    code_of_conduct
    roadmap
+   wishlist
    nxeps/index
    gitwash/index
