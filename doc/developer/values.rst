@@ -32,12 +32,10 @@ Our values
 
 - We are inclusive. We continue to welcome and mentor newcomers who are
   making their first contribution.
-- We are community-driven. Decisions about the API and features are driven by
-  our users' requirements, not by the whims of the core team. (See
-  :ref:`governance`.)
-- We serve scientific applications primarily, both social and natural sciences. 
-- We focus on network science algorithms and graph measures primarily.
-- We prefer simple readable code that uses native Python data structures
+- We are open source and community-driven. Decisions about the API and
+  features are driven by our users' requirements. (See :ref:`governance`.)
+- We focus on graph data structures and algorithms for network science applications.
+- We prefer pure Python implementations using native data structures
   (especially dicts) due to their consistent intuitive interface and amazing
   performance capabilities. We include interfaces to other data structures,
   especially NumPy arrays and SciPy sparse matrixes for algorithms that more
@@ -55,8 +53,6 @@ Our values
   preferably with examples, as well as gallery examples that showcase how that
   function is used in a scientific application.
   Core developers take an active role in finishing documentation examples.
-- We don't do magic. We prefer to educate users rather than make decisions on their
-  behalf.  This does not preclude sensible defaults.
 
 Copyright
 ---------
