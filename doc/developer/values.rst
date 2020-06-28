@@ -1,3 +1,5 @@
+.. _mission_and_values:
+
 ==================
 Mission and Values
 ==================

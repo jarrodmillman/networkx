@@ -49,8 +49,7 @@ among other possibilities. Any community member can become a contributor, and
 all are encouraged to do so. By contributing to the project, community members
 can directly help to shape its future.
 
-Contributors are encouraged to read the
-:ref:`contributing guide <howto_contribute>`.
+Contributors are encouraged to read the :ref:`contributor_guide`.
 
 Core developers
 ---------------
@@ -63,7 +62,7 @@ changes to the API, and thereby more easily carry on with their project related
 activities. Core developers appear as organization members on the NetworkX
 `GitHub organization <https://github.com/orgs/networkx/people>`_. Core
 developers are expected to review code contributions while adhering to the
-:ref:`core developer guide <core_dev>`.
+:ref:`core_dev`.
 
 New core developers can be nominated by any existing core developer.
 Discussion about new core developer nominations is one of the few activities
@@ -72,6 +71,8 @@ invite a new core developer must be made by “lazy consensus”, meaning unanim
 agreement by all responding existing core developers. Invitation must take
 place at least one week after initial nomination, to allow existing members
 time to voice any objections.
+
+.. _steering_council:
 
 Steering Council
 ----------------
@@ -112,8 +113,7 @@ decision making process for the latter.  If no option can be found without
 objections, the decision is escalated to the SC, which will itself use
 consensus seeking to come to a resolution. In the unlikely event that there is
 still a deadlock, the proposal will move forward if it has the support of a
-simple majority of the SC. Any vote must be backed by a :ref:`NetworkX Enhancement
-Proposal (NXEP) <nxep>`.
+simple majority of the SC. Any vote must be backed by a NetworkX :ref:`nxep`.
 
 Decisions (in addition to adding core developers and SC membership as above)
 are made according to the following rules:
@@ -141,7 +141,7 @@ If an objection is raised on a lazy consensus, the proposer can appeal to the
 community and core developers and the change can be approved or rejected by
 escalating to the SC, and if necessary, a NXEP (see below).
 
-.. _nexp:
+.. _nxep:
 
 Enhancement Proposals (NXEPs)
 =============================

@@ -203,7 +203,7 @@ If there *are* substantive objections, then the NXEP remains in
 ``Draft`` state, discussion continues as normal, and it can be
 proposed for acceptance again later once the objections are resolved.
 
-In unusual cases, the `NetworkX Steering Council`_ may be asked to decide
+In unusual cases, the NetworkX :ref:`steering_council` may be asked to decide
 whether a controversial NXEP is ``Accepted``.
 
 
@@ -276,9 +276,6 @@ References and Footnotes
 .. _mailing list: http://groups.google.com/group/networkx-discuss/
 
 .. _issue tracker: https://github.com/networkx/networkx/issues
-
-.. _NetworkX Steering Council:
-   https://networkx.github.io/dev/governance/governance.html
 
 .. _`GitHub pull request`: https://github.com/networkx/networkx/pulls
 

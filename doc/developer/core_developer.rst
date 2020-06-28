@@ -3,11 +3,8 @@
 Core Developer Guide
 ====================
 
-This document offers guidelines for core developers.  First and
-foremost, you should familiarize yourself with the project's
-`mission, vision, and values
-<https://networkx.github.io/dev/values.html>`__.  When in
-doubt, always refer back here.
+First, you should familiarize yourself with our
+:ref:`mission_and_values`.
 
 As a core team member, you gain the responsibility of shepherding
 other contributors through the review process; here are some
@@ -18,8 +15,7 @@ All Contributors Are Treated The Same
 
 You now have the ability to push changes directly to the master
 branch, but should never do so; instead, continue making pull requests
-as before and in accordance with the `general contributor guide
-<https://networkx.github.io/documentation/latest/developer/contribute.html>`__.
+as before and in accordance with the :ref:`contributor_guide`.
 
 As a core contributor, you gain the ability to merge or approve
 other contributors' pull requests.  Much like nuclear launch keys, it
@@ -36,13 +32,13 @@ Reviewing
 How to Conduct A Good Review
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Always* be kind to contributors. Nearly all of `networkx` is
+*Always* be kind to contributors. Nearly all of NetworkX is
 volunteer work, for which we are tremendously grateful. Provide
 constructive criticism on ideas and implementations, and remind
 yourself of how it felt when your own work was being evaluated as a
 novice.
 
-`networkx` strongly values mentorship in code review.  New users
+NetworkX strongly values mentorship in code review.  New users
 often need more handholding, having little to no git
 experience. Repeat yourself liberally, and, if you don’t recognize a
 contributor, point them to our development guide, or other GitHub
@@ -55,12 +51,12 @@ an abandoned pull request.
 When reviewing, focus on the following:
 
 1. **API:** The API is what users see when they first use
-   `networkx`. APIs are difficult to change once released, so
+   NetworkX. APIs are difficult to change once released, so
    should be simple, `functional
    <https://en.wikipedia.org/wiki/Functional_programming>`__ (i.e. not
    carry state), consistent with other parts of the library, and
    should avoid modifying input variables.  Please familiarize
-   yourself with the project's `deprecation policy <https://networkx.org/docs/dev/contribute.html#deprecation-cycle>`__.
+   yourself with the project's :ref:`deprecation_policy`.
 
 2. **Documentation:** Any new feature should have a gallery
    example, that not only illustrates but explains it.
@@ -129,7 +125,7 @@ for a number of reasons:
 - fixing the issue is difficult, and it is deemed too niche a use case to
   devote sustained effort or prioritize over other issues; or
 - the use case or feature request is something that core developers feel
-  does not belong in networkx,
+  does not belong in NetworkX,
 
 among others. Similarly, pull requests sometimes need to be closed without
 merging, because:
@@ -137,7 +133,7 @@ merging, because:
 - the pull request implements a niche feature that we consider not worth the
   added maintenance burden;
 - the pull request implements a useful feature, but requires significant
-  effort to bring up to networkx's standards, and the original
+  effort to bring up to NetworkX's standards, and the original
   contributor has moved on, and no other developer can be found to make the
   necessary changes; or
 - the pull request makes changes that do not align with our values, such as
@@ -166,17 +162,15 @@ Further resources
 As a core member, you should be familiar with community and developer
 resources such as:
 
--  Our `contributor
-   guide <https://networkx.github.io/documentation/latest/developer/contribute.html>`__
--  Our `code of
-   conduct <https://networkx.github.io/documentation/latest/developer/contribute.html>`__
+-  Our :ref:`contributor_guide`
+-  Our :ref:`code_of_conduct`
 -  `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__ for Python style
 -  `PEP257 <https://www.python.org/dev/peps/pep-0257/>`__ and the `NumPy
    documentation
    guide <https://docs.scipy.org/doc/numpy/docs/howto_document.html>`__
    for docstrings. (NumPy docstrings are a superset of PEP257. You
    should read both.)
--  The networkx `tag on
+-  The NetworkX `tag on
    StackOverflow <https://stackoverflow.com/questions/tagged/networkx>`__
 -  Our `mailing
    list <http://groups.google.com/group/networkx-discuss/>`__
