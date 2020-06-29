@@ -30,10 +30,9 @@ Python. We accomplish this by:
 Our values
 ----------
 
-- We are inclusive. We continue to welcome and mentor newcomers who are
+- We are inclusive (:ref:`code_of_conduct`). We continue to welcome and mentor newcomers who are
   making their first contribution.
-- We are open source and community-driven. Decisions about the API and
-  features are driven by our users' requirements. (See :ref:`governance`.)
+- We are open source and community-driven (:ref:`governance`).
 - We focus on graph data structures and algorithms for network science applications.
 - We prefer pure Python implementations using native data structures
   (especially dicts) due to their consistent intuitive interface and amazing
@@ -52,7 +51,6 @@ Our values
   docstrings <https://docs.scipy.org/doc/numpy/docs/howto_document.html>`,
   preferably with examples, as well as gallery examples that showcase how that
   function is used in a scientific application.
-  Core developers take an active role in finishing documentation examples.
 
 Copyright
 ---------
