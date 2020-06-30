@@ -203,8 +203,9 @@ If there *are* substantive objections, then the NXEP remains in
 ``Draft`` state, discussion continues as normal, and it can be
 proposed for acceptance again later once the objections are resolved.
 
-In unusual cases, the NetworkX :ref:`steering_council` may be asked to decide
-whether a controversial NXEP is ``Accepted``.
+In unusual cases, disagreements about the direction or approach may
+require escalation to the NetworkX :ref:`steering_council` who
+then decide whether a controversial NXEP is ``Accepted``.
 
 
 Maintenance

@@ -54,7 +54,7 @@ have shown they can be trusted to maintain NetworkX with care. Becoming a
 core developer allows contributors to merge approved pull requests, cast votes
 for and against merging a pull request, and be involved in deciding major
 changes to the API, and thereby more easily carry on with their project related
-activities. Core developers appear as team members on the `NetworkX Core Team page 
+activities. Core developers appear as team members on the `NetworkX Core Team page
 <https://github.com/orgs/networkx/teams/core/members>`_. Core
 developers are expected to review code contributions while adhering to the
 :ref:`core_dev`.
@@ -108,7 +108,7 @@ decision making process for the latter.  If no option can be found without
 an objection, the decision is escalated to the SC, which will itself use
 consensus seeking to come to a resolution. In the unlikely event that there is
 still a deadlock, the proposal will move forward if it has the support of a
-simple majority of the SC. Any vote must be backed by a NetworkX :ref:`nxep`.
+simple majority of the SC. Any proposal must be described by a NetworkX :ref:`nxep`.
 
 Decisions (in addition to adding core developers and SC membership as above)
 are made according to the following rules:
@@ -141,11 +141,13 @@ escalating to the SC, and if necessary, a NXEP (see below).
 Enhancement Proposals (NXEPs)
 =============================
 
-For all votes, a formal proposal must have been made public and discussed
-before the vote. After discussion has taken place, the key advocate of the
-proposal must create a consolidated document summarizing the discussion, called
-a NXEP, on which the core team votes. The lifetime of a NXEP detailed in
-:ref:`nxep0`.
+Any proposals for enhancements of NetworkX should be written as a formal NXEP
+following the template :doc:`nxep-template`. The NXEP must be made public and
+discussed before any vote is taken. The discussion must be summarized by a
+key advocate of the proposal in the appropriate section of the NXEP.
+Once this summary is made public and after sufficient time to allow the
+core team to understand it, they vote.
+The workflow of a NXEP is detailed in :ref:`nxep0`.
 
 A list of all existing NXEPs is available :ref:`here <nxep_list>`.
 
