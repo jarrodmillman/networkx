@@ -33,6 +33,7 @@ jobs:
             pip install --upgrade pip wheel setuptools
             pip install -r requirements.txt
             pip install -r requirements/doc.txt
+            pip install -r requirements/example.txt
             pip install pydot pygraphviz
 
       - run:
