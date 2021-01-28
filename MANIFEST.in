@@ -9,6 +9,7 @@ recursive-include examples *.txt *.py *.edgelist *.mbox *.gz *.bz2 *.zip *.html 
 recursive-include doc *.py *.rst Makefile *.html *.png *.txt *.css *.inc *.js
 
 include networkx/tests/*.py
+include networkx/drawing/tests/baseline/*png
 include networkx/*/tests/*.txt
 include networkx/*/tests/*.py
 include networkx/*/*/tests/*.py
