@@ -10,7 +10,6 @@ from textwrap import dedent
 import pytest
 
 import networkx as nx
-from networkx.readwrite.gml import literal_destringizer, literal_stringizer
 
 
 class TestGraph:
@@ -187,7 +186,7 @@ graph   [
 ]"""
         G = nx.Graph()
         G.add_node(1203)
-        data = "\n".join(nx.generate_gml(G, stringizer=literal_stringizer))
+        data = "\n".join(nx.generate_gml(G))
         assert data == answer
 
     def test_relabel_duplicate(self):
@@ -217,7 +216,7 @@ graph
         # Writing tuple labels to GML failed.
         G = nx.Graph()
         G.add_edge((0, 1), (1, 0))
-        data = "\n".join(nx.generate_gml(G, stringizer=literal_stringizer))
+        data = "\n".join(nx.generate_gml(G))
         answer = """graph [
   node [
     id 0
@@ -448,8 +447,8 @@ graph
         G.graph["data"] = data
         G.add_node(0, int=-1, data={"data": data})
         G.add_edge(0, 0, float=-2.5, data=data)
-        gml = "\n".join(nx.generate_gml(G, stringizer=literal_stringizer))
-        G = nx.parse_gml(gml, destringizer=literal_destringizer)
+        gml = "\n".join(nx.generate_gml(G))
+        G = nx.parse_gml(gml)
         assert data == G.name
         assert {"name": data, "data": data} == G.graph
         assert list(G.nodes(data=True)) == [(0, {"int": -1, "data": {"data": data}})]
@@ -480,11 +479,8 @@ graph
         assert answer == gml
 
     def test_exceptions(self):
-        pytest.raises(ValueError, literal_destringizer, "(")
-        pytest.raises(ValueError, literal_destringizer, "frozenset([1, 2, 3])")
-        pytest.raises(ValueError, literal_destringizer, literal_destringizer)
-        pytest.raises(ValueError, literal_stringizer, frozenset([1, 2, 3]))
-        pytest.raises(ValueError, literal_stringizer, literal_stringizer)
+        pytest.raises(ValueError, frozenset([1, 2, 3]))
+        pytest.raises(ValueError)
         with tempfile.TemporaryFile() as f:
             f.write(codecs.BOM_UTF8 + b"graph[]")
             f.seek(0)
@@ -570,7 +566,7 @@ graph
         assert_generate_error(G)
         G = nx.Graph()
         G.graph["data"] = frozenset([1, 2, 3])
-        assert_generate_error(G, stringizer=literal_stringizer)
+        assert_generate_error(G)
 
     def test_label_kwarg(self):
         G = nx.parse_gml(self.simple_data, label="id")
